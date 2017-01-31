@@ -1,0 +1,10 @@
+.game{
+    display: block;
+}
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}

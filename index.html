@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" type="text/css" src="hidden.css">
+        <style>
+            .game{
+    display: block;
+}
+.hidden {
+  display: none;
+}
+
+.visuallyhidden {
+  opacity: 0;
+}
+
+            </style>
+        <title>
+            Video Game Selector - Selects Video Games You May Enjoy
+        </title>
+    </head>
+    <body>
+        <h1>
+            Video Game Selector
+        </h1>
+        <h2 id="what_to_select">
+             Select What Game You Want
+        </h2>
+        <div id="select_games">
+            <button id="kid_friendly_only">Kid Friendly Games Only</button>
+            <button id="mature_only">Mature Games Only</button>
+            <button id="all_users">All Games</button>
+        </div>
+        <div id="games_avaliable">
+            <ul id="games">
+                <li id="game_minecraft" class="kid_friendly">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Minecraft
+                                        <br />
+                                        <img id="img_minecraft" src="images/img_minecraft.jpg" width="100" height="100" />
+                                    </center>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li id="game_gta" class="adult_only">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <center>
+                                        Grand Theft Auto
+                                        <br />
+                                        <img id="img_gta" src="images/img_gta.jpg" width="100" height="100" />
+                                    </center>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <!--
+                <li id="game_">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <center>
+                                        
+                                        <br />
+                                        <img id="img_" src="images/img_.jpg" width="100" height="100" />
+                                    </center>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                -->
+            </ul>
+        </div>
+        <script src="hidestuff.js"></script>
+    </body>
+</html>
