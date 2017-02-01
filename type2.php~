@@ -55,7 +55,6 @@ $type1array=$_GET["type1array"];
 foreach ($type1array as &$item) {
 $type1 = $type1 . "&type1array[]=" . $item;
 };
-echo $agerange;
 echo $type1;
 ?>" + johndoe;
 }
