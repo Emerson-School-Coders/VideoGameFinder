@@ -44,6 +44,9 @@ johndoe = johndoe + "&type1-6=adventuring";
 if (document.getElementById('sandbox').checked){
 johndoe = johndoe + "&type1-7=sandbox";
 }
+if (document.getElementById('action').checked){
+johndoe = johndoe + "&type1-8=action";
+}
 window.location = "type2_redir.php<?php
 $agerange="?";
 $theagearray=$_GET["agerangearray"];
@@ -63,6 +66,7 @@ echo "
 <input type='checkbox' name='type1-5' value='rpg' id='rpg' \>Role Playing Game<br>
 <input type='checkbox' name='type1-6' value='adventuring' id='adventuring' \>Adventuring<br>
 <input type='checkbox' name='type1-7' value='sandbox' id='sandbox' \>Sandbox<br>
+<input type='checkbox' name='type1-7' value='action' id='action' \>Action<br>
 
 <!--
 <input type='checkbox' name='type1-' value='' id='' \><br>

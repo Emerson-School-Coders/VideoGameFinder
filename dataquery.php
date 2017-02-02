@@ -40,9 +40,10 @@ $db = new DB( '/var/www/html/VideoGameFinder/games.db' );
 $rows = $db->query("SELECT COUNT(*) as count FROM games");
 $row = $rows->fetchArray();
 $numRows = $row['count'];
-echo "<h1>Games in database:&nbsp;";
+echo "<h1>Here are the games recommended for you</h1>";
+echo "<h3>Total games in database:&nbsp;";
 echo $numRows;
-echo "</h1>";
+echo "</h3><hr>";
 $i=1;
 
 
