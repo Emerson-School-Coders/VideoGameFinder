@@ -2,7 +2,13 @@
 <!--LOADED WITH GET DATA:
 <?php print_r($_GET);?>
 -->
-
+<link rel="stylesheet" href="w3.css">
+<style>
+a:link { color: #000000; text-decoration: none}
+a:visited { color: #000000; text-decoration: none}
+a:hover { color: #000000; text-decoration: none}
+a:active { color: #000000; text-decoration: none}
+</style>
 <?php
 //saving GET data to vars:
 echo "<!--";
@@ -117,15 +123,16 @@ $platformcompat=1;
 //end of checking platform compatibility
 ///////////////STOP CHECKING FOR COMPATIBILITY
 if(($pricecompat && $platformcompat) && ($agerangecompat && $typescompat)){//check if it is compatible with everything
-echo "<a target='_blank' href='";
+echo "<div class='w3-btn w3-white w3-ripple'><a target='_blank' href='";
 echo $db->querySingle("SELECT url FROM games WHERE id=" . $i);
 echo "'>";
 echo "<img title='";
 echo $db->querySingle("SELECT name FROM games WHERE id=" . $i);
 echo "' src='";
 echo $db->querySingle("SELECT image FROM games WHERE id=" . $i);
-echo "' width='100' height='100'>";
-echo "</a>";
+echo "' width='150' height='150'><br><center>";
+echo $db->querySingle("SELECT name FROM games WHERE id=" . $i);
+echo "</center></a></div>";
 }
 $i+=1;
 }
