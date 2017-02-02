@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="jquery.js"></script>
-        <link rel="stylesheet" type="text/css" src="w3.css">
+        <link rel="stylesheet" type="text/css" href="w3.css">
         <style>
         </style>
         <title>
@@ -44,7 +44,7 @@ johndoe = johndoe + "&type1-6=adventuring";
 if (document.getElementById('sandbox').checked){
 johndoe = johndoe + "&type1-7=sandbox";
 }
-window.location = "type2_redir.php<?php 
+window.location = "type2_redir.php<?php
 $agerange="?";
 $theagearray=$_GET["agerangearray"];
 foreach ($theagearray as &$item) {
@@ -68,7 +68,7 @@ echo "
 <input type='checkbox' name='type1-' value='' id='' \><br>
 -->
 
-<button onclick='redir();'>Submit</button>
+<button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Submit</button>
 
 ";
 print_r ($_GET);

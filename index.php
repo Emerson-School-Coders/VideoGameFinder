@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="jquery.js"></script>
-        <link rel="stylesheet" type="text/css" src="w3.css">
+        <link rel="stylesheet" type="text/css" href="w3.css">
         <style>
         </style>
         <title>
@@ -58,7 +58,7 @@
         <input type='radio' name='agerangehigh' value='16' />16 <br>
         <input type='radio' name='agerangehigh' value='17' />17 <br>
         <input type='radio' name='agerangehigh' value='18' />18+ <br>
-	<input type='submit'>
+	<input class='w3-btn w3-blue w3-round-xxlarge' type='submit'>
 	</form>
     </body>
 </html>

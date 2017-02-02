@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="jquery.js"></script>
-        <link rel="stylesheet" type="text/css" src="w3.css">
+        <link rel="stylesheet" type="text/css" href="w3.css">
         <style>
         </style>
         <title>
