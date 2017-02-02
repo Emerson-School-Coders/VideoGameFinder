@@ -17,22 +17,48 @@
              <?="Select Your Age Range"?>
         </h2>
 	<h3>
-	   Select all that apply
+	   Select your lowest age and your highest age
 	</h3>
-        <?php
-echo "
-	<form action='type1_redir.php'>
-	<input type='checkbox' name='agerange1' value='0-3' /> 0 - 3<br>
-	<input type='checkbox' name='agerange2' value='3-6' /> 4 - 6<br>
-	<input type='checkbox' name='agerange3' value='6-9' /> 7 - 9<br>
-	<input type='checkbox' name='agerange4' value='9-12' /> 10 - 12<br>
-	<input type='checkbox' name='agerange5' value='12-15' /> 13 - 15<br>
-	<input type='checkbox' name='agerange6' value='15-18' /> 16 - 18<br>
-	<input type='checkbox' name='agerange7' value='18' /> 18+<br>
+	<form action='type1_redir.php' method='GET'>
+	<span>Lowest Age Rating</span><br>
+	<input type='radio' name='agerangelow' value='1' />1 <br>
+	<input type='radio' name='agerangelow' value='2' />2 <br>
+	<input type='radio' name='agerangelow' value='3' />3 <br>
+	<input type='radio' name='agerangelow' value='4' />4 <br>
+	<input type='radio' name='agerangelow' value='5' />5 <br>
+	<input type='radio' name='agerangelow' value='6' />6 <br>
+	<input type='radio' name='agerangelow' value='7' />7 <br>
+	<input type='radio' name='agerangelow' value='8' />8 <br>
+	<input type='radio' name='agerangelow' value='9' />9 <br>
+	<input type='radio' name='agerangelow' value='10' />10 <br>
+	<input type='radio' name='agerangelow' value='11' />11 <br>
+	<input type='radio' name='agerangelow' value='12' />12 <br>
+	<input type='radio' name='agerangelow' value='13' />13 <br>
+	<input type='radio' name='agerangelow' value='14' />14 <br>
+	<input type='radio' name='agerangelow' value='15' />15 <br>
+	<input type='radio' name='agerangelow' value='16' />16 <br>
+	<input type='radio' name='agerangelow' value='17' />17 <br>
+	<input type='radio' name='agerangelow' value='18' />18 <br>
+	<span>Highest Age Rating</span><br>
+        <input type='radio' name='agerangehigh' value='1' />1 <br>
+        <input type='radio' name='agerangehigh' value='2' />2 <br>
+        <input type='radio' name='agerangehigh' value='3' />3 <br>
+        <input type='radio' name='agerangehigh' value='4' />4 <br>
+        <input type='radio' name='agerangehigh' value='5' />5 <br>
+        <input type='radio' name='agerangehigh' value='6' />6 <br>
+        <input type='radio' name='agerangehigh' value='7' />7 <br>
+        <input type='radio' name='agerangehigh' value='8' />8 <br>
+        <input type='radio' name='agerangehigh' value='9' />9 <br>
+        <input type='radio' name='agerangehigh' value='10' />10 <br>
+        <input type='radio' name='agerangehigh' value='11' />11 <br>
+        <input type='radio' name='agerangehigh' value='12' />12 <br>
+        <input type='radio' name='agerangehigh' value='13' />13 <br>
+        <input type='radio' name='agerangehigh' value='14' />14 <br>
+        <input type='radio' name='agerangehigh' value='15' />15 <br>
+        <input type='radio' name='agerangehigh' value='16' />16 <br>
+        <input type='radio' name='agerangehigh' value='17' />17 <br>
+        <input type='radio' name='agerangehigh' value='18' />18+ <br>
 	<input type='submit'>
-
 	</form>
-"
-	?>
     </body>
 </html>
