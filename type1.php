@@ -47,6 +47,9 @@ johndoe = johndoe + "&type1-7=sandbox";
 if (document.getElementById('action').checked){
 johndoe = johndoe + "&type1-8=action";
 }
+if (document.getElementById('pvp').checked){
+johndoe = johndoe + "&type1-9=pvp";
+}
 window.location = "type2_redir.php<?php
 $agerange="?";
 $theagearray=$_GET["agerangearray"];
@@ -66,8 +69,8 @@ echo "
 <input type='checkbox' name='type1-5' value='rpg' id='rpg' \>Role Playing Game<br>
 <input type='checkbox' name='type1-6' value='adventuring' id='adventuring' \>Adventuring<br>
 <input type='checkbox' name='type1-7' value='sandbox' id='sandbox' \>Sandbox<br>
-<input type='checkbox' name='type1-7' value='action' id='action' \>Action<br>
-
+<input type='checkbox' name='type1-8' value='action' id='action' \>Action<br>
+<input type='checkbox' name='type1-9' value='pvp' id='pvp' \>PVP<br>
 <!--
 <input type='checkbox' name='type1-' value='' id='' \><br>
 -->
@@ -75,7 +78,7 @@ echo "
 <button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Submit</button>
 
 ";
-print_r ($_GET);
+//print_r ($_GET);
 	?>
     </body>
 </html>

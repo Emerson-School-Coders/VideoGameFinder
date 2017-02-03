@@ -138,7 +138,7 @@ echo "
 <button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Submit</button>
 
 ";
-print_r ($_GET);
+//print_r ($_GET);
 	?>
     </body>
 </html>
