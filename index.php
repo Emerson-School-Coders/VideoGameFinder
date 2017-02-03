@@ -41,6 +41,7 @@
 	<option value='17'>17</option>
 	<option value='18'>18</option>
 	</select>
+        <br>
 	<span>Highest Age Rating</span><br>
 	<select name="agerangehigh">
         <option value='1'>1</option>
@@ -62,6 +63,7 @@
 	<option value='17'>17</option>
 	<option value='18'>18+</option>
 	</select>
+        <br>
 	<input class='w3-btn w3-blue w3-round-xxlarge' type='submit'>
 	</form>
     </body>
