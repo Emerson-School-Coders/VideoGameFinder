@@ -32,6 +32,9 @@ array_push($type1,$_GET["type1-8"]);
 if(isset($_GET["type1-9"])){
 array_push($type1,$_GET["type1-9"]);
 }
+if(isset($_GET["type1-10"])){
+array_push($type1,$_GET["type1-10"]);
+}
 $placetogo="type2.php?";
 foreach($type1 as &$item){
 $placetogo=$placetogo . "&type1array[]=";
