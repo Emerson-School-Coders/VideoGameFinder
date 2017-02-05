@@ -1,4 +1,7 @@
 <!--DATAQUERY.PHP-->
+<!DOCTYPE html>
+<html>
+<head>
 <!--LOADED WITH GET DATA:
 <?php print_r($_GET);?>
 -->
@@ -9,6 +12,8 @@ a:visited { color: #000000; text-decoration: none}
 a:hover { color: #000000; text-decoration: none}
 a:active { color: #000000; text-decoration: none}
 </style>
+</head>
+<body>
 <?php
 //saving GET data to vars:
 echo "<!--";
@@ -139,3 +144,5 @@ $i+=1;
 }
 //echo $db->querySingle("SELECT image FROM games");
 ?>
+</body>
+</html>
