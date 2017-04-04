@@ -135,7 +135,7 @@ echo "
 <input type='checkbox' name='type3-22' value='' id='' \><br>
 -->
 
-<button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Submit</button>
+<button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button>
 
 ";
 //print_r ($_GET);
