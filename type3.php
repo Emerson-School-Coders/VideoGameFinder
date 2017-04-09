@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('credit.php');
+?>
 <html>
     <head>
         <script src="jquery.js"></script>
@@ -10,15 +13,17 @@
         </title>
     </head>
     <body>
+<center>
         <h1>
             Video Game Selector
         </h1>
         <h2 id="what_to_select">
              <?="What device do you want to play the game on?"?>
-        </h2>
+	        </h2>
 	<h3>
 	Select all that apply
 	</h3>
+</center>
 <script>
 function redir(){
 //this variable describes part of the URI you will be redirected to:
@@ -56,6 +61,7 @@ johndoe = johndoe + "&type3-10=steamos";
 if (document.getElementById('arcade').checked){
 johndoe = johndoe + "&type3-11=arcade";
 }
+/*
 if (document.getElementById('wii').checked){
 johndoe = johndoe + "&type3-12=wii";
 }
@@ -86,7 +92,8 @@ johndoe = johndoe + "&type3-20=nintendoswitch";
 if (document.getElementById('other').checked){
 johndoe = johndoe + "&type3-21=other";
 }
-window.location = "type4_redir.php<?php 
+*/
+window.location = "type4_redir.php<?php
 $agerange="?";
 $theagearray=$_GET["agerangearray"];
 foreach ($theagearray as &$item) {
@@ -121,6 +128,8 @@ echo "
 <input type='checkbox' name='type3-9' value='steamlinux' id='steamlinux' \>Steam(Linux)<br>
 <input type='checkbox' name='type3-10' value='steamos' id='steamos' \>SteamOS<br>
 <input type='checkbox' name='type3-11' value='arcade' id='arcade' \>Arcade<br>
+<!--WHEN MORE GAMES HAVE THESE TYPES, I WILL UNCOMMENT THEM!-->
+<!--
 <input type='checkbox' name='type3-12' value='wii' id='wii' \>Wii<br>
 <input type='checkbox' name='type3-13' value='wiiu' id='wiiu' \>WiiU<br>
 <input type='checkbox' name='type3-14' value='xbox360' id='xbox360' \>Xbox 360<br>
@@ -131,11 +140,12 @@ echo "
 <input type='checkbox' name='type3-19' value='nintendo3ds' id='nintendo3ds' \>Nintendo 3DS<br>
 <input type='checkbox' name='type3-20' value='nintendoswitch' id='nintendoswitch' \>Nintendo Switch<br>
 <input type='checkbox' name='type3-21' value='other' id='other' \>Other<br>
+-->
 <!--
 <input type='checkbox' name='type3-22' value='' id='' \><br>
 -->
 
-<button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button>
+<center><button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button></center>
 
 ";
 //print_r ($_GET);

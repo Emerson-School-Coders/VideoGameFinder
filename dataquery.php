@@ -1,5 +1,7 @@
-<!--DATAQUERY.PHP-->
 <!DOCTYPE html>
+<?php
+include('credit.php');
+?>
 <html>
 <head>
 <!--LOADED WITH GET DATA:
@@ -40,17 +42,20 @@ class DB extends SQLite3
         }
 }
 
-$db = new DB( '/var/www/html/VideoGameFinder/games.db' );
+$db = new DB( '/var/www/VideoGameFinder/games.db' );
 
 $rows = $db->query("SELECT COUNT(*) as count FROM games");
 $row = $rows->fetchArray();
 $numRows = $row['count'];
+echo "<center>";
 echo "<h1>Here are the games recommended for you</h1>";
 echo "<h3>Total games in database:&nbsp;";
 echo $numRows;
-echo "</h3><hr>";
+echo "</h3></center><hr>";
 $i=1;
 
+//are there any games?
+$gamesselected=0;
 
 while ($i<=$numRows){
 ///////////////START CHECKING FOR COMPATIBILITY
@@ -139,10 +144,27 @@ echo $db->querySingle("SELECT image FROM games WHERE id=" . $i);
 echo "' width='150' height='150'><br><center>";
 echo $db->querySingle("SELECT name FROM games WHERE id=" . $i);
 echo "</center></a></div>";
+$gamesselected+=1;
 }
 $i+=1;
 }
 //echo $db->querySingle("SELECT image FROM games");
+echo "<!-- Games Selected: ";
+echo $gamesselected;
+echo "-->";
+if ($gamesselected==0){
+echo "<!--Crap. Gotta work on this.-->";
+echo "<center><h3>No Games Were Found.  <a href='main.php' class='w3-btn w3-blue w3-round-xxlarge'>Try Again?</a></h3></center>";
+}
+include 'copy.php';
 ?>
 </body>
 </html>
+<!--
+ABOUT COPYRIGHT:
+
+Images used under fair use.  If you would like them to be replaced, contact me.
+
+mostdigitsofpi AT gmail DOT com
+
+-->

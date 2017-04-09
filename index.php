@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('credit.php');
+?>
 <html>
     <head>
         <script src="jquery.js"></script>
@@ -10,11 +13,11 @@
         </title>
     </head>
     <body>
-        <h1>
+        <h1 style="text-align:center">
             Video Game Selector
         </h1>
 	<br>
-	<h2>
+	<h2 style="text-align:center">
 	    About
 	</h2>
 	<hr>
@@ -22,6 +25,9 @@
 	    This program will allow you to select which video games will suit what you want to play.  For example, you can select free games that are non-violent and those are the only ones you'll see.
 	</p>
         <br>
-	<a href="main.php" class='w3-btn w3-blue w3-round-xxlarge'>Start Here</a>
+	<center><a href="main.php" class='w3-btn w3-blue w3-round-xxlarge'>Start Here</a></center>
+	<?php
+	include dirname(__FILE__)."/copy.php";
+	?>
     </body>
 </html>

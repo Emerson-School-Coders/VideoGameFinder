@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('credit.php');
+?>
 <html>
     <head>
         <script src="jquery.js"></script>
@@ -10,6 +13,8 @@
         </title>
     </head>
     <body>
+<!--Using NANO as my text editor is helping me overcome my indentation OCD that I got from Python.-->
+<center>
         <h1>
             Video Game Selector
         </h1>
@@ -19,6 +24,7 @@
 	<h3>
 	   Select your lowest age and your highest age
 	</h3>
+</center>
 	<form action='type1_redir.php' method='GET'>
 	<span>Lowest Age Rating</span><br>
 	<select name="agerangelow">
@@ -64,7 +70,10 @@
 	<option value='18'>18+</option>
 	</select>
         <br>
-	<input class='w3-btn w3-blue w3-round-xxlarge' type='submit' value='Continue'>
+<center>	<input class='w3-btn w3-blue w3-round-xxlarge' type='submit' value='Continue'></center>
 	</form>
+	<?php
+		include dirname(__FILE__)."/copy.php";
+	?>
     </body>
 </html>

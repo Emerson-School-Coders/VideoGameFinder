@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include('credit.php');
+?>
 <html>
     <head>
         <script src="jquery.js"></script>
@@ -10,6 +13,8 @@
         </title>
     </head>
     <body>
+<!--See comment in main.php-->
+<center>
         <h1>
             Video Game Selector
         </h1>
@@ -19,6 +24,7 @@
 	<h3>
 	Select all that apply
 	</h3>
+</center>
 <script>
 function redir(){
 //this variable describes part of the URI you will be redirected to:
@@ -79,10 +85,13 @@ echo "
 <input type='checkbox' name='type1-' value='' id='' \><br>
 -->
 
-<button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button>
+<center><button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button></center>
 
 ";
 //print_r ($_GET);
 	?>
+        <?php
+                include dirname(__FILE__)."/copy.php";
+        ?>
     </body>
 </html>
