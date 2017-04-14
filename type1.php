@@ -71,7 +71,7 @@ echo $agerange;
 </script>
         <?php
 echo "
-<input type='checkbox' name='type1-1' value='platforming' id='platforming' \>Platforming<br>
+<input type='checkbox' name='type1-1' value='platforming' id='platforming' \><span style='cursor: help;' onclick=\"alert('Platforming games involve jumping between platforms.  Examples include games like Donkey Kong, Doodle Jump, and Geometry Dash.')\">Platforming</span><br>
 <input type='checkbox' name='type1-2' value='sports' id='sports' \>Sports<br>
 <input type='checkbox' name='type1-3' value='escape' id='escape' \>Escape<br>
 <input type='checkbox' name='type1-4' value='shooter' id='shooter' \>Shooter<br>

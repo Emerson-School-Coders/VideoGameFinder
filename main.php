@@ -26,7 +26,7 @@ include('credit.php');
 	</h3>
 </center>
 	<form action='type1_redir.php' method='GET'>
-	<span>Lowest Age Rating</span><br>
+	<span style='cursor: help;' onclick="alert('What is the minimum rating the game could have (so you don\'t get games for toddlers)?')">Lowest Age Rating</span><br>
 	<select name="agerangelow">
 	<option value='1'>1</option>
 	<option value='2'>2</option>
@@ -48,7 +48,7 @@ include('credit.php');
 	<option value='18'>18</option>
 	</select>
         <br>
-	<span>Highest Age Rating</span><br>
+	<span style='cursor: help;' onclick='alert("What is the maximum rating the game could have(18+ means no maximum)")'>Highest Age Rating</span><br>
 	<select name="agerangehigh">
         <option value='1'>1</option>
 	<option value='2'>2</option>

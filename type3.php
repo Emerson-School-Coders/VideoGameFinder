@@ -149,6 +149,7 @@ echo "
 
 ";
 //print_r ($_GET);
+include("copy.php");
 	?>
     </body>
 </html>
