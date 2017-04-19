@@ -72,15 +72,15 @@ echo $agerange;
         <?php
 echo "
 <input type='checkbox' name='type1-1' value='platforming' id='platforming' \><span style='cursor: help;' onclick=\"alert('Platforming games involve jumping between platforms.  Examples include games like Donkey Kong, Doodle Jump, and Geometry Dash.')\">Platforming</span><br>
-<input type='checkbox' name='type1-2' value='sports' id='sports' \>Sports<br>
-<input type='checkbox' name='type1-3' value='escape' id='escape' \>Escape<br>
-<input type='checkbox' name='type1-4' value='shooter' id='shooter' \>Shooter<br>
-<input type='checkbox' name='type1-5' value='rpg' id='rpg' \>Role Playing Game<br>
-<input type='checkbox' name='type1-6' value='adventuring' id='adventuring' \>Adventuring<br>
-<input type='checkbox' name='type1-7' value='sandbox' id='sandbox' \>Sandbox<br>
-<input type='checkbox' name='type1-8' value='action' id='action' \>Action<br>
-<input type='checkbox' name='type1-9' value='pvp' id='pvp' \>PVP<br>
-<input type='checkbox' name='type1-10' value='puzzle' id='puzzle' \>Puzzle<br>
+<input type='checkbox' name='type1-2' value='sports' id='sports' \><span style='cursor: help;' onclick=\"alert('Sports games include things like soccer, pool, and cards.')\">Sports</span><br>
+<input type='checkbox' name='type1-3' value='escape' id='escape' \><span style='cursor: help;' onclick=\"alert('Escape games are generally about finding keys and other objects to open doors, in order to escape.')\">Escape</span><br>
+<input type='checkbox' name='type1-4' value='shooter' id='shooter' \><span style='cursor: help;' onclick=\"alert('Games where violent shooting are prominent.  Archery and like games are not in this category.')\">Shooter</span><br>
+<input type='checkbox' name='type1-5' value='rpg' id='rpg' \><span style='cursor: help;' onclick=\"alert('A game where the player assumes the role of a single main character.')\">Role Playing Game</span><br>
+<input type='checkbox' name='type1-6' value='adventuring' id='adventuring' \><span style='cursor: help;' onclick=\"alert('Adventuring games involve exploration.')\">Adventuring</span><br>
+<input type='checkbox' name='type1-7' value='sandbox' id='sandbox' \><span style='cursor: help;' onclick=\"alert('Sandbox games like Minecraft and Terraria are all about building. They allow the player much more choice than other games.')\">Sandbox</span><br>
+<input type='checkbox' name='type1-8' value='action' id='action' \><span style='cursor: help;' onclick=\"alert('Most mobile games, like Flappy Bird, Angry Birds, and Temple Run, fall under this category.')\">Action</span><br>
+<input type='checkbox' name='type1-9' value='pvp' id='pvp' \><span style='cursor: help;' onclick=\"alert('Multiplayer games where the main goal is to fight other players.')\">PVP</span><br>
+<input type='checkbox' name='type1-10' value='puzzle' id='puzzle' \><span style='cursor: help;' onclick=\"alert('Logic games, like Candy Crush ort Bejewled.')\">Puzzle</span><br>
 <!--
 <input type='checkbox' name='type1-' value='' id='' \><br>
 -->
