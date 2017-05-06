@@ -67,8 +67,8 @@ echo $type1;
 </script>
 <?php
 echo "
-<input type='checkbox' name='type2-1' value='free' id='free' \>Free<br>
-<input type='checkbox' name='type2-2' value='freemium' id='freemium' \>Free with in game purchases<br>
+<input type='checkbox' name='type2-1' value='free' id='free' \ checked>Free<br>
+<input type='checkbox' name='type2-2' value='freemium' id='freemium' \ checked>Free with in game purchases<br>
 <input type='checkbox' name='type2-3' value='1499' id='1499' \>$0.01-$4.99<br>
 <input type='checkbox' name='type2-4' value='5999' id='5999' \>$5.00-$9.99<br>
 <input type='checkbox' name='type2-5' value='101999' id='101999' \>$10.00-$19.99<br>
