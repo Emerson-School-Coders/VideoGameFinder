@@ -65,19 +65,18 @@ echo $type1;
 ?>" + johndoe;
 }
 </script>
-<?php
-echo "
-<input type='checkbox' name='type2-1' value='free' id='free' \ checked>Free<br>
-<input type='checkbox' name='type2-2' value='freemium' id='freemium' \ checked>Free with in game purchases<br>
-<input type='checkbox' name='type2-3' value='1499' id='1499' \>$0.01-$4.99<br>
-<input type='checkbox' name='type2-4' value='5999' id='5999' \>$5.00-$9.99<br>
-<input type='checkbox' name='type2-5' value='101999' id='101999' \>$10.00-$19.99<br>
-<input type='checkbox' name='type2-6' value='204999' id='204999' \>$20.00-$49.99<br>
-<input type='checkbox' name='type2-7' value='50' id='50' \>$50.00+<br>
+<input type='checkbox' name='type2-1' value='free' id='free' <?php if($_COOKIE["range"]>=0){echo "checked";} ?> \>Free<br>
+<input type='checkbox' name='type2-2' value='freemium' id='freemium' <?php if($_COOKIE["range"]>=0){echo "checked";} ?>  \>Free with in game purchases<br>
+<input type='checkbox' name='type2-3' value='1499' id='1499' <?php if($_COOKIE["range"]>=5){echo "checked";} ?>  \>$0.01-$4.99<br>
+<input type='checkbox' name='type2-4' value='5999' id='5999' <?php if($_COOKIE["range"]>=10){echo "checked";} ?>  \>$5.00-$9.99<br>
+<input type='checkbox' name='type2-5' value='101999' id='101999' <?php if($_COOKIE["range"]>=20){echo "checked";} ?>  \>$10.00-$19.99<br>
+<input type='checkbox' name='type2-6' value='204999' id='204999' <?php if($_COOKIE["range"]>=50){echo "checked";} ?>  \>$20.00-$49.99<br>
+<input type='checkbox' name='type2-7' value='50' id='50' <?php if($_COOKIE["range"]>=10000){echo "checked";} ?>  \>$50.00+<br>
 <!--
 <input type='checkbox' name='type2-1' value='' id='' \><br>
 -->
-
+<?php
+echo"
 <center><button class='w3-btn w3-blue w3-round-xxlarge' onclick='redir();'>Continue</button></center>
 
 ";
